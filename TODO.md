@@ -1,0 +1,9 @@
+- [x] Agregar botón de menú móvil en index.html
+- [x] Actualizar estilos en styles.css para el menú móvil (estado activo, posicionamiento)
+- [x] Ajustar altura de la sección hero para móvil en index.html
+- [x] Probar la responsividad lanzando el navegador (servidor local iniciado)
+- [x] Agregar sección de educación con línea del tiempo vertical en index.html justo después de habilidades
+- [x] Corregir enlace de "Educación" en navbar de index.html a href="#educacion"
+- [x] Agregar estilos CSS para timeline vertical en styles.css
+- [x] Ajustar timeline para alternar izquierda/derecha
+- [ ] Probar la nueva sección de educación en navegador

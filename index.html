@@ -5,50 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Leonardo González - Diseñador & Desarrollador</title>
     <meta name="description" content="Portafolio profesional de Leonardo González - Diseñador Gráfico, Desarrollador Frontend y Fotógrafo">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-<body class="bg-white text-gray-800">
+
+<body class=" text-dark">
+
     <!-- Header -->
-    <header class="bg-blue-600 text-white">
-        <nav class="container mx-auto flex justify-between items-center p-4">
-            <div class="logo text-2xl font-bold">LG</div>
-            <ul class="nav-links flex space-x-4">
-                <li><a href="#inicio" class="hover:bg-blue-500 transition duration-300 px-3 py-2 rounded">Inicio</a></li>
-                <li><a href="#sobre-mi" class="hover:bg-blue-500 transition duration-300 px-3 py-2 rounded">Sobre Mí</a></li>
-                <li><a href="#habilidades" class="hover:bg-blue-500 transition duration-300 px-3 py-2 rounded">Habilidades</a></li>
-                <li><a href="#proyectos" class="hover:bg-blue-500 transition duration-300 px-3 py-2 rounded">Proyectos</a></li>
-                <li><a href="#galeria" class="hover:bg-blue-500 transition duration-300 px-3 py-2 rounded">Galería</a></li>
-                <li><a href="#contacto" class="hover:bg-blue-500 transition duration-300 px-3 py-2 rounded">Contacto</a></li>
-            </ul>
-            <button class="mobile-menu-btn text-white">
-                <i class="fas fa-bars"></i>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-2" href="#">LG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </nav>
-    </header>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 text-center">
-        <div class="container mx-auto">
-            <h1 class="text-4xl font-bold">Leonardo González</h1>
-            <p class="text-xl mt-4">Diseñador Gráfico • Desarrollador Frontend • Fotógrafo</p>
-            <a href="#proyectos" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded mt-4 inline-block">Ver Mi Trabajo</a>
+    <header id="inicio" class="hero-section d-flex align-items-center justify-content-center text-white">
+        <div class="container text-center px-3">
+            <p class="lead fs-4 mt-3">Hola, soy</p>
+            <h1 class="display-3 fw-bold">Leonardo González</h1>
+            <p class="lead fs-4 mt-3">Diseñador Gráfico • <span class="text-gradient">Desarrollador Frontend</span> • Fotógrafo</p>
+            <div class="social-icons mt-3">
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-behance"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- CTA Button -->
+            <div class="cta-container p-5">
+                <a href="#portfolio" class="cta-button">Ver mi trabajo</a>
+            </div>
         </div>
-    </section>
+    </header>
 
     <!-- Sobre Mí -->
-    <section id="sobre-mi" class="about py-20">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">Sobre Mí</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="about-text md:w-1/2">
-                    <h3 class="text-2xl font-semibold">Creatividad y Tecnología en Armonía</h3>
-                    <p>Soy un profesional apasionado por el diseño, desarrollo web y la fotografía. Combino habilidades técnicas con creatividad para crear experiencias digitales impactantes y memorables.</p>
-                    <p>Con experiencia en múltiples disciplinas, me especializo en crear soluciones visuales que no solo se ven bien, sino que también funcionan perfectamente.</p>
+    <section id="sobre-mi" class="py-20">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center text-white mb-5">Sobre Mí</h2>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h3 class="h2 text-white fw-semibold mb-3">Creatividad y Tecnología en Armonía</h3>
+                    <p class="fs-5 text-white">Soy un creativo multidisciplinario con pasión por el desarrollo web, el diseño gráfico y la fotografía. Combino habilidades técnicas con sensibilidad visual para crear experiencias digitales completas y memorables.</p>
+                    <p class="fs-5 text-white">Mi experiencia en fotografía me ha dado un ojo agudo para la composición y el color, que aplico tanto en mis diseños gráficos como en el desarrollo de interfaces web. Cada proyecto es una oportunidad para fusionar arte y tecnología.</p>
+                    <p class="fs-5 text-white">Ya sea capturando momentos a través del lente, diseñando identidades visuales impactantes, o construyendo aplicaciones web modernas, mi objetivo es siempre contar historias y crear conexiones significativas con la audiencia.</p>
                 </div>
-                <div class="about-image md:w-1/2">
-                    <div class="bg-gray-300 h-64 flex items-center justify-center rounded">
-                        <i class="fas fa-user text-6xl text-gray-600"></i>
+                <div class="col-lg-6">
+                    <div class="about-image-placeholder d-flex align-items-center justify-content-center">
+                        <i class="fas fa-user text-muted fs-1"></i>
                     </div>
                 </div>
             </div>
@@ -56,59 +88,102 @@
     </section>
 
     <!-- Habilidades -->
-    <section id="habilidades" class="skills py-20 bg-gray-100">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">Mis Habilidades</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition">
-                    <i class="fas fa-paint-brush text-4xl text-blue-600"></i>
-                    <h3 class="text-xl font-semibold mt-4">Diseño Gráfico</h3>
-                    <p>Creación de identidad visual, branding, material promocional y diseño editorial con atención al detalle y creatividad.</p>
+    <section id="habilidades" class="py-20">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center text-white mb-5">Mis Habilidades</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm hover-shadow">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-paint-brush text-primary fs-1 mb-3"></i>
+                            <h3 class="h5 fw-semibold mb-2">Diseño Gráfico</h3>
+                            <p class="card-text">Creación de identidad visual, branding, material promocional y diseño editorial con atención al detalle y creatividad.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition">
-                    <i class="fas fa-code text-4xl text-blue-600"></i>
-                    <h3 class="text-xl font-semibold mt-4">Desarrollo Web</h3>
-                    <p>Desarrollo frontend responsive, interfaces de usuario intuitivas y experiencias digitales optimizadas.</p>
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm hover-shadow">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-code text-primary fs-1 mb-3"></i>
+                            <h3 class="h5 fw-semibold mb-2">Desarrollo Web</h3>
+                            <p class="card-text">Desarrollo frontend responsive, interfaces de usuario intuitivas y experiencias digitales optimizadas.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card bg-white p-6 rounded shadow hover:shadow-lg transition">
-                    <i class="fas fa-camera text-4xl text-blue-600"></i>
-                    <h3 class="text-xl font-semibold mt-4">Fotografía</h3>
-                    <p>Captura y edición de imágenes profesionales, composición visual y storytelling a través de la lente.</p>
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm hover-shadow">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-camera text-primary fs-1 mb-3"></i>
+                            <h3 class="h5 fw-semibold mb-2">Fotografía</h3>
+                            <p class="card-text">Captura y edición de imágenes profesionales, composición visual y storytelling a través de la lente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación -->
+    <section id="educacion" class="py-20">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center text-white mb-5">Educación</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 fw-semibold">2018 - 2020</h3>
+                        <h4 class="h6 text-primary">Técnico Superior Universitario en Entornos Virtuales y Negocios Digitales</h4>
+                        <p class="mb-0">Universidad Tecnológica de León (UTL)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 fw-semibold">2020 - 2022</h3>
+                        <h4 class="h6 text-primary">Ingeniería en Entornos Virtuales y Negocios Digitales</h4>
+                        <p class="mb-0">Universidad Tecnológica de León (UTL)</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Proyectos Destacados -->
-    <section id="proyectos" class="projects py-20">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">Proyectos Destacados</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="project-card bg-white p-6 rounded shadow hover:shadow-lg transition">
-                    <div class="project-image h-48 bg-gray-300 flex items-center justify-center">
-                        <i class="fas fa-palette text-4xl"></i>
-                    </div>
-                    <div class="project-content mt-4">
-                        <h3 class="text-xl font-semibold">Proyecto de Diseño 1</h3>
-                        <p>Branding completo para empresa con identidad visual coherente y materiales promocionales.</p>
-                    </div>
-                </div>
-                <div class="project-card bg-white p-6 rounded shadow hover:shadow-lg transition">
-                    <div class="project-image h-48 bg-gray-300 flex items-center justify-center">
-                        <i class="fas fa-laptop-code text-4xl"></i>
-                    </div>
-                    <div class="project-content mt-4">
-                        <h3 class="text-xl font-semibold">Sitio Web Corporativo</h3>
-                        <p>Desarrollo frontend responsive con diseño moderno y optimizado para SEO.</p>
+    <section id="proyectos" class="py-20">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center text-white mb-5">Proyectos Destacados</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card shadow-sm hover-shadow">
+                        <div class="project-image">
+                            <i class="fas fa-palette fs-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-semibold mb-2">Proyecto de Diseño 1</h3>
+                            <p class="card-text">Branding completo para empresa con identidad visual coherente y materiales promocionales.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card bg-white p-6 rounded shadow hover:shadow-lg transition">
-                    <div class="project-image h-48 bg-gray-300 flex items-center justify-center">
-                        <i class="fas fa-images text-4xl"></i>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm hover-shadow">
+                        <div class="project-image">
+                            <i class="fas fa-laptop-code fs-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-semibold mb-2">Sitio Web Corporativo</h3>
+                            <p class="card-text">Desarrollo frontend responsive con diseño moderno y optimizado para SEO.</p>
+                        </div>
                     </div>
-                    <div class="project-content mt-4">
-                        <h3 class="text-xl font-semibold">Sesión Fotográfica</h3>
-                        <p>Proyecto fotográfico profesional con edición y post-producción de alta calidad.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm hover-shadow">
+                        <div class="project-image">
+                            <i class="fas fa-images fs-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-semibold mb-2">Sesión Fotográfica</h3>
+                            <p class="card-text">Proyecto fotográfico profesional con edición y post-producción de alta calidad.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,82 +191,106 @@
     </section>
 
     <!-- Galería de Proyectos (5-15 proyectos) -->
-    <section id="galeria" class="gallery-section py-20">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">Mi Galería</h2>
-            <p class="text-center mb-4 text-gray-600">Explora mi colección de trabajos en diseño, desarrollo y fotografía</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 1 - Diseño</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 2 - Desarrollo</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 3 - Fotografía</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 4 - Diseño</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 5 - Desarrollo</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 6 - Fotografía</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 7 - Diseño</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 8 - Desarrollo</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 9 - Fotografía</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 10 - Diseño</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 11 - Desarrollo</div>
-                <div class="gallery-item bg-gray-200 h-48 flex items-center justify-center">Proyecto 12 - Fotografía</div>
+    <section id="portfolio" class="py-20">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center text-white mb-3">Mi Galería</h2>
+            <p class="text-center text-white mb-5  fs-5">Explora mi colección de trabajos en diseño, desarrollo y fotografía</p>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 1 - Diseño</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 2 - Desarrollo</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 3 - Fotografía</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 4 - Diseño</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 5 - Desarrollo</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 6 - Fotografía</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 7 - Diseño</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 8 - Desarrollo</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 9 - Fotografía</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 10 - Diseño</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 11 - Desarrollo</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="gallery-item rounded">Proyecto 12 - Fotografía</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="contact py-20 bg-blue-600 text-white">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
-            <div class="contact-content text-center">
-                <p>¿Interesado en trabajar juntos? ¡Hablemos!</p>
-                <div class="contact-info mt-4">
-                    <p><i class="fas fa-envelope"></i> email@ejemplo.com</p>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Ciudad, País</p>
-                </div>
-                <div class="mt-4">
-                    <a href="mailto:email@ejemplo.com" class="bg-red-500 hover:bg-red-600 py-2 px-4 rounded">Enviar Mensaje</a>
+    <section id="contacto" class="py-20 text-white">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-center mb-5">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="fs-4 mb-4">¿Interesado en trabajar juntos? ¡Hablemos!</p>
+                    <div class="contact-info fs-5 mb-4">
+                        <p><i class="fas fa-envelope me-2"></i> luis_leoglez52@hotmail.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +1 (477) 220 5721</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> León, Gto. México</p>
+                    </div>
+                    <a href="mailto:luis_leoglez52@hotmail.com" class="btn btn-danger btn-lg">Enviar Mensaje</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 Leonardo González. Todos los derechos reservados.</p>
-            <div class="mt-2">
-                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-behance"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+    <footer class="text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Leonardo González. Todos los derechos reservados.</p>
+            <p class="mb-2">Hecho con ♥ y código</p>
+            <div>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-behance"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        // JavaScript básico para el menú móvil
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            const navLinks = document.querySelector('.nav-links');
-            
-            menuBtn.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-            });
-            
-            // Smooth scrolling para enlaces de navegación
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
+        // Smooth scrolling para enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
         });
     </script>
+    <style>
+        /* Estilos adicionales para hover en cards (Bootstrap no tiene transiciones por defecto) */
+        .card:hover,
+        .hover-shadow:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+    </style>
 </body>
 </html>
