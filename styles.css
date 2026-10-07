@@ -108,10 +108,10 @@ header {
 /***********************/
 /* Proyectos Start */
 /***********************/
-#proyectos {
+/* #proyectos {
     background: url("assets/background_section.webp") no-repeat center
         center/cover;
-}
+} */
 
 .py-20 {
     padding-top: 5rem !important;
@@ -140,6 +140,14 @@ header {
 /***********************/
 /* Proyectos End */
 /***********************/
+
+/***********************/
+/* Experiencia Start */
+/***********************/
+#experiencia {
+    background: url("assets/background_section.webp") no-repeat center
+        center/cover;
+}
 
 /***********************/
 /* Habilidades Start */
